@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resultats on Archers de Bois-Colombes</title>
+    <link>http://localhost:1313/tags/resultats/</link>
+    <description>Recent content in Resultats on Archers de Bois-Colombes</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Apr 2025 18:19:48 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/resultats/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Concours et résultats</title>
+      <link>http://localhost:1313/docs/concours/</link>
+      <pubDate>Fri, 11 Apr 2025 18:19:48 +0200</pubDate>
+      <guid>http://localhost:1313/docs/concours/</guid>
+      <description>&lt;h3 id=&#34;résultats&#34;&gt;Résultats&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;fleches&#34;&gt;Flèches&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;concours&#34;&gt;Concours&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.tiralarc92.com/en-savoir-plus/mandats-78700&#34;&gt;Mandats 92&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
