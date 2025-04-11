@@ -39,7 +39,7 @@ authorbox = false
     <tr>
         <td>Numéro 1<br/>
         <a href="/newsletters/newsletter-200711_01.pdf">
-            Décembre 2007
+            Novembre 2007
             </a>
         </td>
         <td>
