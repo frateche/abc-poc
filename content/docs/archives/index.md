@@ -5,6 +5,7 @@ title = 'Archives'
 menu = 'main'
 tags = [ 'archives' ]
 authorbox = false
+sidebar = false
 weight = 99
 +++
 
