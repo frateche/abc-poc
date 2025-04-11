@@ -9,6 +9,5 @@ tags = [ 'pages' ]
 ### ICICICICI
 
 * avant 
-* {{< fleches csv='title' >}}
 * après
 ---
