@@ -65,6 +65,7 @@ jobs:
       #       hugo-
       - name: Build with Hugo
         run: |
+          echo ${{ env.HUGO_FLECHES_SHEET_ID }}
           HUGO_FLECHES_SHEET_ID=${{ env.HUGO_FLECHES_SHEET_ID }} hugo \
             --gc \
             --minify \
