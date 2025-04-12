@@ -65,8 +65,7 @@ jobs:
       #       hugo-
       - name: Build with Hugo
         run: |
-          env
-          HUGO_FLECHES_SHEET_ID=${HUGO_FLECHES_SHEET_ID} hugo \
+          HUGO_FLECHES_SHEET_ID=$${{HUGO_FLECHES_SHEET_ID}} hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
