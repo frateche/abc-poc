@@ -31,6 +31,8 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: hugo
     env:
       HUGO_VERSION: 0.146.2
       HUGO_ENVIRONMENT: production
@@ -63,7 +65,7 @@ jobs:
       #       hugo-
       - name: Build with Hugo
         run: |
-          hugo \
+          HUGO_FLECHES_SHEET_ID=${HUGO_FLECHES_SHEET_ID} hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
