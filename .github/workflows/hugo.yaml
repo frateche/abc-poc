@@ -37,6 +37,7 @@ jobs:
       HUGO_VERSION: 0.146.2
       HUGO_ENVIRONMENT: production
       TZ: Europe/Paris
+      HUGO_FLECHES_SHEET_ID: ${{ secrets.HUGO_FLECHES_SHEET_ID }}
     steps:
       - name: Install Hugo CLI
         run: |
@@ -64,10 +65,7 @@ jobs:
       #     restore-keys:
       #       hugo-
       - name: Build with Hugo
-        run: |
-          env
-          echo $HUGO_FLECHES_SHEET_ID
-          #HUGO_FLECHES_SHEET_ID=$HUGO_FLECHES_SHEET_ID 
+        run: | 
           hugo \
             --gc \
             --minify \
