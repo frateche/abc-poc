@@ -5,8 +5,8 @@ draft = false
 authorbox = false
 sidebar = false
 tags = [ 'pages' ]
+pager = false
 +++
 
-### VOVOVO
-ooo
+{{< table-fleches >}}
 

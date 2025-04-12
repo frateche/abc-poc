@@ -1,0 +1,72 @@
+{{ $colors := slice "blanche" "noir" "bleu" "rouge"  "jaune" "bronze" "argent" "or" }}        
+
+{{ $gid := getenv "HUGO_FLECHES_SHEET_ID" }}
+{{ $url := printf "https://docs.google.com/spreadsheets/d/%s/export?exportFormat=csv" $gid }}
+
+{{ with try (resources.GetRemote $url) }}
+    {{ with .Err }}
+        {{ errorf "%s" . }}
+    {{ else with .Value }}
+        {{ $data := . | transform.Unmarshal }}
+        {{ $headers := index $data 0 }}
+        {{ $values := after 1 $data }}    
+        <!-- <table>
+        <thead>
+            {{ range $h := $headers }}
+            <th>{{ $h }}</th>
+            {{ end }}
+        </thead>
+        {{ range $k, $v := $values  }}
+        <tbody>
+            <tr>
+                {{ range after 1 $v }}
+                <td>{{ . }}</td>
+                {{ end }}
+            </tr>
+        </tbody>
+        {{end}}
+        </table>
+
+        <hr /> -->
+        <table>
+            {{ range $k, $v := $values }}
+            {{ 
+                $user := dict 
+                "name"  ( index $v 0 )
+                "first" ( index $v 1 )
+            }}
+            <a href="#user-{{ $k }}">{{ index $user "name" }},&emsp;{{ index $user "first" }}</a><br />
+            {{ end }}
+        </table>
+        <hr />
+        {{ range $k, $v := $values }}
+        {{ 
+            $user := dict 
+            "name"  ( index $v 0 )
+            "first" ( index $v 1 )
+            "blanche" ( dict "date" (index $v 2)  "score" (index $v 3) )
+            "noir"    ( dict "date" (index $v 4)  "score" (index $v 5) )
+            "bleu"    ( dict "date" (index $v 6)  "score" (index $v 7) )
+            "rouge"   ( dict "date" (index $v 8)  "score" (index $v 9) )
+            "jaune"   ( dict "date" (index $v 10) "score" (index $v 11) )
+            "bronze"  ( dict "date" (index $v 12) "score" (index $v 13) )
+            "argent"  ( dict "date" (index $v 14) "score" (index $v 15) )
+            "or"      ( dict "date" (index $v 16) "score" (index $v 17) )
+        }}
+        <h3 id="user-{{$k}}">{{ index $user "name" }}, {{ index $user "first" }}</h3>
+        <table>
+            {{ range $ck, $col := $colors }}
+            {{ if index (index $user $col) "score" }}
+            <tr>
+                <td>{{ $col }}</td>
+                <td>{{ index (index $user $col) "date" }}</td>
+                <td>{{ index (index $user $col) "score" }}</td>
+            </tr>
+            {{ end }}
+            {{ end }}
+        </table>
+        {{ end }}
+    {{ else }}
+        {{ errorf "Unable to get remote resource %q" $url }}
+    {{ end }}
+{{ end }}

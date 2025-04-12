@@ -4,15 +4,21 @@ title = 'Archers de Bois-Colombes'
 theme = "mainroad"
 enableRobotsTXT = true
 
+[caches]
+  [caches.getresource]
+    maxAge = -1
+
 [markup.goldmark.renderer]
   unsafe = true
 
 [security]
   [security.http]
     mediaTypes = ['^text/csv$']
+  [security.funcs]
+    getenv = ['^HUGO_']
 
 [Params]
-  mainSections = ["post"]
+  mainSections = ["posts"]
   description = "Description TODO"
   pager = true
   post_meta = [ "date" ]
