@@ -20,13 +20,13 @@ enableRobotsTXT = true
 [Params]
   mainSections = ["posts"]
   description = "Description TODO"
-  pager = true
-  post_meta = [ "date" ]
+  pager = false
+  post_meta = [ "date", "categories" ]
 
 [Params.logo]
   image = "images/logo.png"
   title = "Archers de Bois-Colombes"
-  subtitle = "La section tir à l'arc de Bois Colombes Sport"
+  subtitle = "La section tir à l'arc de Bois-Colombes Sport"
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
