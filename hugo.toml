@@ -23,6 +23,11 @@ enableRobotsTXT = true
   pager = true
   post_meta = [ "date" ]
 
+[Params.logo]
+  image = "images/logo.png"
+  title = "Archers de Bois-Colombes"
+  subtitle = "La section tir à l'arc de Bois Colombes Sport"
+
 [Params.sidebar]
   home = "right"   # Configure layout for home page
   list = "right"   # Configure layout for list pages
