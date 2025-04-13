@@ -15,6 +15,9 @@ L’inscription au club de tir à l’arc pour les nouveaux archers devra être 
 - **Heure**: 10h à 17h
 - **Lieu**: Parc des Bruyères – Av. de l’Europe, 92270 Bois-Colombes
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.3896655769454!2d2.2572142768016645!3d48.90796779721584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e665981fca9505%3A0xc0232d034b44a50!2sParc%20des%20Bruy%C3%A8res!5e0!3m2!1sfr!2sfr!4v1744560002732!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
 ### Pour les archers déjà présents au club
 
 Le Bureau vous fera parvenir les liens pour vous réinscrire. Pas besoin de passer au forum, mais vous êtes les bienvenus pour un petit bonjour ou pour aider !
@@ -22,8 +25,8 @@ Le Bureau vous fera parvenir les liens pour vous réinscrire. Pas besoin de pass
 ## Processus d’inscription
 
 - Les inscriptions et réinscriptions se font en ligne sur la plateforme **[Mon Club](https://bcs.monclub.app/subscription).**
-- Les documents à préparer :  **[Documents à fournir](/nous-rejoindre/documents-a-fournir/)**
-- Processus d'inscription : **[Mon Club - Processus d'inscription](/nous-rejoindre/mon-club-processus-dinscription/)**.
+- Les documents à préparer :  **[Documents à fournir](/inscription/documents-a-fournir/)**
+- Processus d'inscription : **[Mon Club - Processus d'inscription](/inscription/mon-club-processus-dinscription/)**.
 
 ---
 
@@ -51,7 +54,10 @@ Au delà du pur niveau technique, l'encadrement prend aussi en considération vo
 
 # Quels seront les horaires d'entraînement ?
 
-L'activité tir à l'arc est ouverte à tous à partir de 11 ans. Elle est pratiquée au Gymnase Smirlian, 11 Avenue Renée, 92270 Bois-Colombes.Les horaires sont les suivants :
+L'activité tir à l'arc est ouverte à tous à partir de 11 ans.
+Elle est pratiquée au Gymnase Smirlian, 11 Avenue Renée, 92270 Bois-Colombes.Les horaires sont les suivants.
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.762097215563!2d2.2669887768021937!3d48.919924696373585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e665ed6d8ced31%3A0x2a64d13bce0daca6!2sComplexe%20sportif%20Albert-Smirlian!5e0!3m2!1sfr!2sfr!4v1744560233183!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 - **Lundi**
   - 18h30 - 20h00 Intermédiaires
@@ -71,8 +77,6 @@ L'activité tir à l'arc est ouverte à tous à partir de 11 ans. Elle est prati
 - **Dimanche**
   - 09h00 – 10h30 – Confirmés et compétiteurs
   - 10h30 – 12h00 – Confirmés
-
-Débutants : 1ère année ou tir jusqu'à 15 mètresIntermédiaires : dès la fin de la première année et/ou tir à 20 mètresConfirmés : de 20 mètres et plus.
 
 # Faut-il acheter un arc ?
 
