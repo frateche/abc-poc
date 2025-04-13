@@ -26,7 +26,7 @@ Le Bureau vous fera parvenir les liens pour vous réinscrire. Pas besoin de pass
 
 - Les inscriptions et réinscriptions se font en ligne sur la plateforme **[Mon Club](https://bcs.monclub.app/subscription).**
 - Les documents à préparer :  **[Documents à fournir](/inscription/documents-a-fournir/)**
-- Processus d'inscription : **[Mon Club - Processus d'inscription](/inscription/mon-club-processus-dinscription/)**.
+- Processus d'inscription : **[Mon Club - Processus d'inscription](/inscription/mon-club-processus-d-inscription/)**.
 
 ---
 

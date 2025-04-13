@@ -45,7 +45,7 @@ Notice d'information assurance licence FFTA.
 - Voici comment procéder pour l'estimer : en position debout, les mains en croix (bras bien perpendiculaires au corps comme sur la photo ci-dessous), adossé à un mur, **mesurer** la distance entre chaque main **à partir du majeur**. Ensuite, diviser cette **mesure** par 2.5.
 - Exemple : je mesure 1m66 de majeur à majeur.  1m66 = 166 cm. On divise 166/2.5 = 66,4 centimètres. C'est cette valeur que vous devez saisir. Si vous avez des doutes passez la question. Les entraîneurs prendront cette mesure aux premiers cours ou lors du forum des associations.
 
-![allonge](/images/Allonge-300x42.png)
+![allonge](/images/inscription/Allonge-300x42.png)
 
 # Œil Directeur
 
