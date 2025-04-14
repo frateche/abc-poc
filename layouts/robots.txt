@@ -1,2 +1,7 @@
+# Disallow all
 User-agent: *
 Disallow: /
+
+# Dissallow fleches page.
+Disallow: resultats/fleches
+Disallow: le-club

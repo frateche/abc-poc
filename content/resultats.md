@@ -14,4 +14,4 @@ weight = 80
 ---
 
 ### Concours
-[Mandats 92](https://www.tiralarc92.com/en-savoir-plus/mandats-78700)
+[Mandats](mandats)
