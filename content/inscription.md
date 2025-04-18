@@ -11,7 +11,7 @@ weight = 10
 ## Où et quand peut-on s’inscrire pour la saison 2024-2025 ?
 
 L’inscription au club de tir à l’arc pour les nouveaux archers devra être réalisée lors du **FORUM DES ASSOCIATIONS** :
-- **Date**: Samedi 22 Juin 2024
+- **Date**: Samedi 22 Juin 2025
 - **Heure**: 10h à 17h
 - **Lieu**: Parc des Bruyères – Av. de l’Europe, 92270 Bois-Colombes
 
