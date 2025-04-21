@@ -23,9 +23,9 @@ Vous trouverez ci-dessous, classées par années, nos archives des Lettres d’I
 - [Le pas de tir](/archives/le-pas-de-tir)
 - [Tirez juste](/archives/tirez-juste)
 - [Tout sur le berger button](/archives/tout-sur-le-berger-button)
-- [reparer-son-repose-fleche-plastique](/archives/reparer-son-repose-fleche-plastique)
-- [montage-et-reglage-de-son-arc](/archives/montage-et-reglage-de-son-arc)
-- [le-tir-a-l-arc-un-sport-pour-tous](/archives/le-tir-a-l-arc-un-sport-pour-tous)
+- [Reparer sonrepose flecheplastique](/archives/reparer-son-repose-fleche-plastique)
+- [Montage et reglage de son arc](/archives/montage-et-reglage-de-son-arc)
+- [Le tir à l'arc un sport pour tous](/archives/le-tir-a-l-arc-un-sport-pour-tous)
 
 ## Le reste
 - [Lettre du club](/archives/newsletters/lettre-du-club/)
