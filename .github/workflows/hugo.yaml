@@ -75,6 +75,7 @@ jobs:
       - name: Get fleches json
         run: |
           duckdb :memory: < scripts/extract.sql > assets/fleches/results.json
+          exit 0
       - name: Build with Hugo
         run: | 
           hugo \
