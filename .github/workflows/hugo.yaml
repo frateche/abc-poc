@@ -47,9 +47,6 @@ jobs:
         run: |
           curl https://github.com/duckdb/duckdb/releases/download/v1.2.2/duckdb_cli-linux-amd64.zip -L -o /tmp/duckdb.zip
           cd /usr/local/bin && unzip /tmp/duckdb.zip
-      - name: Get fleches json
-        run: |
-          duckdb :memory: < scripts/extract.sql > assets/fleches/results.json
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
@@ -75,6 +72,9 @@ jobs:
       #     key: hugo-${{ github.run_id }}
       #     restore-keys:
       #       hugo-
+      - name: Get fleches json
+        run: |
+          duckdb :memory: < scripts/extract.sql > assets/fleches/results.json
       - name: Build with Hugo
         run: | 
           hugo \
