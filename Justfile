@@ -12,3 +12,6 @@ dev OPTS="":
 
 clean:
   rm -rf public/*
+
+data:
+    duckdb :memory: < scripts/extract.sql > assets/fleches/results.json
