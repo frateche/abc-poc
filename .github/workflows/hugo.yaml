@@ -37,11 +37,11 @@ jobs:
       TZ: Europe/Paris
       HUGO_FLECHES_SHEET_ID: ${{ secrets.HUGO_FLECHES_SHEET_ID }}
       GSHEET_FLECHES_KEY: ${{ secrets.GSHEET_FLECHES_KEY }}
-      AR_TAB: ${{ variables.AR_TAB }}
-      CH_TAB: ${{ variables.CH_TAB }}
-      CL_TAB: ${{ variables.CL_TAB }}
-      PO_TAB: ${{ variables.PO_TAB }}
-      SV_TAB: ${{ variables.SV_TAB }}
+      AR_TAB: ${{ env.AR_TAB }}
+      CH_TAB: ${{ env.CH_TAB }}
+      CL_TAB: ${{ env.CL_TAB }}
+      PO_TAB: ${{ env.PO_TAB }}
+      SV_TAB: ${{ env.SV_TAB }}
     steps:
       - name: Install duckdb
         run: |
