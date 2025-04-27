@@ -10,4 +10,4 @@ pager = false
 
 <h3>En construction ...</h3>
 
-{{< table-fleches2 >}}
+{{< table-fleches >}}
