@@ -38,13 +38,3 @@ ON archers.fullname = sansviseur.fullname
 
 ORDER BY archers.fullname
 ;
-
---     archers.fullname = classique.fullname
---     AND
---     archers.fullname = poulie.fullname
---     AND
---   archers.fullname LIKE '%KOP%';
--- WHERE FULL  
--- 14z9gltpi9vOcN0no8IbOzf1JlKftOaXlTSKlm0sITbM
--- https://docs.google.com/spreadsheets/d/14z9gltpi9vOcN0no8IbOzf1JlKftOaXlTSKlm0sITbM/export?exportFormat=csv
--- FROM read_csv("https://spreadsheets.google.com/feeds/download/spreadsheets/Export?key=14z9gltpi9vOcN0no8IbOzf1JlKftOaXlTSKlm0sITbM&exportFormat=csv&gid=651308661")
