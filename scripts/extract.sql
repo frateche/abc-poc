@@ -1,23 +1,22 @@
 CREATE TABLE archers AS
     SELECT * 
-    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), getenv('AR_TAB')) );
+    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), 0) );
 
 CREATE TABLE classique AS
     SELECT * 
-    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), getenv('CL_TAB')) );
+    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), 651308661) );
 
 CREATE TABLE poulie AS
     SELECT * 
-    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), getenv('PO_TAB')) );
-
-CREATE TABLE chasse AS
-    SELECT * 
-    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), getenv('CH_TAB')) );
+    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), 1949586586) );
 
 CREATE TABLE sansviseur AS
     SELECT * 
-    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), getenv('SV_TAB')) );
+    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), 539639472) );
 
+CREATE TABLE chasse AS
+    SELECT *
+    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), 1377256094) );
 
 .mode json
 SELECT archers.fullname AS afullname, *
