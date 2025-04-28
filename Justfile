@@ -8,7 +8,7 @@ default:
 # Main
 dev OPTS="":
  #HUGO_FLECHES_SHEET_ID is in .env
- hugo server --renderToMemory --watch {{OPTS}}
+ hugo server --enableGitInfo --renderToMemory --watch {{OPTS}}
 
 clean:
   rm -rf public/*
