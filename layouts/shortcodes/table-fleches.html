@@ -1,9 +1,7 @@
 {{ $resultFile := "./fleches/results.json" }}
 {{ $trunc := 3 }}
+{{ $fields := slice "arc" "date" "score" "level" "rule" }}
 
-{{ $colors   := slice "blanche" "noire" "bleu" "rouge" "jaune" "bronze" "argent" "or" }}
-{{ $armePrefixes := slice "c" "po" "sv" "ch"}}
-{{ $armes    := dict "c" "Classique" "po" "Poulie" "sv" "Sans viseur" "ch" "Chasse" }}
 
 {{ with try (resources.Get $resultFile) }}
     {{ with .Err }}
@@ -11,34 +9,30 @@
     {{ else with .Value }}
         {{ $data := . | transform.Unmarshal }}
         <!-- TABLE OF CONTENT FULLNAME LIST -->
-        {{ range $k, $archer := $data }} <!-- ARCHER LOOP -->
+        {{ $last := "default" }}
+            <table> <!-- First empty table -->
+        {{ range $k, $result := $data }} <!-- ARCHER LOOP -->
+            {{ $fullname := index $result "fullname" }}
+            {{ $fullnameSplit := split $fullname ", " }}
+            {{ $name := index $fullnameSplit 0 }}
+            {{ $first := index $fullnameSplit 1 }}
+            {{ if ne $fullname $last }} <!-- IF -->
+            </table>
             <div>
                 <a href="#res-{{ $k }}">
-                    {{ $archer.last_name | truncate $trunc | upper }}, {{ $archer.first_name }}
+                    {{ $name | upper | truncate $trunc }}, {{ $first }}
                 </a>
             </div>
-        {{ end }} <!-- END ARCHER LOOP -->
-
-        <!-- DETAILS LIST -->
-        {{ range $k, $archer := $data }} <!-- ARCHER LOOP -->
-            <h3 id="res-{{ $k}}">{{ $archer.last_name | truncate $trunc | upper }}, {{ $archer.first_name }}</h3>
             <table>
-            {{ range $kp, $prefix := $armePrefixes }} <!-- PREFIX LOOP -->
-                {{ $arme := index $armes $prefix }}
-                {{ range $kc, $color := $colors }} <!-- COLOR LOOP -->
-                    {{ $resKey := add $prefix "_" $color }}
-                    {{ $resKeyDate := add $prefix "_" $color "_date" }}
-                    {{ if index $archer $resKey }} <!-- NO RESULT, NO DISPLAY-->
-                    </tr>
-                        <td>{{ $arme }} {{ $color }}</td>
-                        <td>{{ index $archer $resKey }}</td>
-                        <td>{{ index $archer $resKeyDate }}</td>
-                    </tr>
-                    {{ end }} <!-- END IF -->
-                {{ end }} <!-- END COLOR LOOP -->
-            {{ end }} <!-- END PREFIX LOOP -->
-            </table>
-        {{ end }} <!-- END PREFIX LOOP -->
+            {{ end }} <!-- END IF-->
+            <tr>
+            {{ range $f := $fields }}
+                <td>{{ index $result $f }}</td>
+            {{ end }}
+            </tr>
+            {{ $last = index $result "fullname" }}
+        {{ end }} <!-- END ARCHER LOOP -->
+        </table> <!-- Closing last table -->
     {{ else }}
         {{ warnf "Unable to get remote resource %q" $resultFile}}
     {{ end }}

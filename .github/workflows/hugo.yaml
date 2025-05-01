@@ -35,13 +35,7 @@ jobs:
       HUGO_VERSION: 0.146.2
       HUGO_ENVIRONMENT: production
       TZ: Europe/Paris
-      HUGO_FLECHES_SHEET_ID: ${{ secrets.HUGO_FLECHES_SHEET_ID }}
-      GSHEET_FLECHES_KEY: ${{ secrets.GSHEET_FLECHES_KEY }}
-      AR_TAB: ${{ vars.AR_TAB }}
-      CH_TAB: ${{ vars.CH_TAB }}
-      CL_TAB: ${{ vars.CL_TAB }}
-      PO_TAB: ${{ vars.PO_TAB }}
-      SV_TAB: ${{ vars.SV_TAB }}
+      GSHEET_FLECHES_ID: ${{ secrets.GSHEET_FLECHES_ID }}
     steps:
       - name: Install duckdb
         run: |

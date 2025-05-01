@@ -1,39 +1,35 @@
-CREATE TABLE archers AS
+CREATE TABLE result AS
     SELECT * 
-    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), 0) );
+    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_ID'), 2044206807) );
 
-CREATE TABLE classique AS
+CREATE TABLE archer AS
     SELECT * 
-    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), 651308661) );
+    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_ID'), 1044942270) );
 
-CREATE TABLE poulie AS
+CREATE TABLE arc AS
     SELECT * 
-    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), 1949586586) );
+    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_ID'), 1378359722) );
 
-CREATE TABLE sansviseur AS
+CREATE TABLE type AS
     SELECT * 
-    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), 539639472) );
+    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_ID'), 230300077) );
 
-CREATE TABLE chasse AS
+CREATE TABLE level AS
     SELECT *
-    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_KEY'), 1377256094) );
+    FROM read_csv( format("https://docs.google.com/spreadsheets/d/{}/export?exportFormat=csv&gid={}", getenv('GSHEET_FLECHES_ID'), 2001880855) );
 
 .mode json
-SELECT archers.fullname AS afullname, *
-FROM 
-    archers
+-- .mode csv
 
-FULL OUTER JOIN classique
-ON archers.fullname = classique.fullname
-
-FULL OUTER JOIN poulie
-ON archers.fullname = poulie.fullname
-
-FULL OUTER JOIN chasse
-ON archers.fullname = chasse.fullname
-
-FULL OUTER JOIN sansviseur
-ON archers.fullname = sansviseur.fullname
-
-ORDER BY archers.fullname
+SELECT result.*
+FROM result, archer, arc, type, level
+WHERE
+        result.fullname = archer.fullname
+AND     archer.disable  = '0'
+AND     result.arc      = arc.name
+AND     result.type     = type.name
+AND     result.level    = level.name
+ORDER BY
+    result.fullname,
+    arc.id, type.id, level.id
 ;
