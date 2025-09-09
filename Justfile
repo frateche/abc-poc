@@ -15,3 +15,6 @@ clean:
 
 data:
     duckdb :memory: < scripts/extract.sql > assets/fleches/results.json
+
+test:
+  echo test
